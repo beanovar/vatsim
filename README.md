@@ -25,24 +25,21 @@
 ## Clearance
  - Request Clearance
 ```
-<callsign>, <aircraft> at <stand>,
-with information <info>, request IFR clearance to <destination>.
+--> <aircraft type> at <stand>, with information <info>, request clearance to <destination>.
 ```
-- Response
 ```
-cleared to <destination>, <departure>, initial <altitude>, <runway>, <squawk>.
+<-- cleared to <destination>, <departure>, <initial altitude>, <runway>, <squawk>
 ```
- - Set any initial altitude on ALT selector
- - Enter sqwark code into transponder
+ - Set initial altitude on ALT selector
+ - Enter squawk code into transponder
 
 ## Push and Start
  - Request Push and Start
  ```
- <callsign> at <stand>, ready for push and start
+ --> at <stand>, ready for push and start
  ```
- - Response
- ```
- push and start approved, face <direction>
+  ```
+ <-- push and start approved, face <direction>
  ```
  - Taxi lights on
  - Push back and face direction ATC specified
@@ -50,23 +47,24 @@ cleared to <destination>, <departure>, initial <altitude>, <runway>, <squawk>.
  - APU Off
 
 ## Taxi
+ - Request Taxi
 ```
-<callsign> request taxi
+--> request taxi
 ```
 ```
-<runway> taxi holding point <holding point> via <taxi route>
+<-- <runway #> taxi holding point <holding point> via <taxi route>
 ```
  - Squawk Charlie
  - Taxi as per instructions holding short at holding point and any other instructions about giving way to other aircraft.
 
 ## Take off
+ - Inform fully ready
 ```
-<callsign> at <holding point> ready for departure
+--> at <holding point> ready for departure
 ```
 ```
-line up and wait <runway>
-...
-winds <degrees> at <knots>, <runway> cleared for takeoff
+<-- line up and wait <runway>
+<-- winds <degrees> at <knots>, <runway> cleared for takeoff
 ```
  - Landing lights and strobe on when entering or crossing any active runway
 
@@ -76,26 +74,26 @@ winds <degrees> at <knots>, <runway> cleared for takeoff
    - Turn on Auto Pilot and Auto Throttle
  - At 2000 feet Contact Departure (note some airports require handoff)
  ```
- <callsign> <departure route> <current altitude> climbing <cleared altitude/FL>
+ --> <departure route> <current altitude> climbing <cleared altitude/FL>
  ```
  ```
- climb <level> / direct to <waypoint>
+ <-- climb <level> / direct to <waypoint>
  ```
  - On transition altitude change to STD Baro
  - Landing/taxi lights off at 10,000 feet
  - Monitor icing and be prepared to use anti-ice
 
 ## Cruise 
-- When switching to any new frequency
+- Give flight level and location when switching to any new frequency
 ```
-<callsign> <flight level> <inbound waypoint>
+--> <flight level> <inbound waypoint>
 ```
  * Comply with any [atc requests](#general-atc-requests)
 
 ## Descend
  * When reaching TOD, if not already given by ATC
  ```
- <callsign> request descent
+ --> request descent
  ```
  * Descend via VNAV or vertical speed. 
 
@@ -104,40 +102,43 @@ winds <degrees> at <knots>, <runway> cleared for takeoff
  - Take note of ATIS information at destination airport: QNH,  landing runway, information code 
  - Take note of stand preference.
  ```
- <callsign> <current altitude> descending <cleared altitude/FL> <inbound waypoint>
+ --> <current altitude> descending <cleared altitude/FL> <inbound waypoint>
  ```
 ```
-cleared <arrival> <transition>, expect <approach> <runway>
+<-- cleared <arrival> <transition>, expect <approach> <runway>
 ```
 - Turn on landing lights at 10,000 feet or within 10 miles of the airport.
 - FMC: Ensure correct arrival, approach and runway entered
 - FMC: Confirm landing VSPEEDS
 
 ```
-<callsign> <vectors>, cleared <approach> <runway>, <speed> until <dme>
+--> <fly heading>, cleared <approach> <runway>, <speed> until <dme>
 ```
 - FMC: Activate programmed approach
 - Autopilot: Activate approach mode to capture glide slope.
 
 ## Land
 ```
-<callsign> established <approach> <runway>
+--> established <approach> <runway>
 ```
 ```
-<wind> <knots> <runway> cleared to land
+<-- <wind> <knots> <runway> cleared to land
 ```
 ## Taxi
 ```
-<callsign> vacated at <exit>
+--> vacated at <exit>
 ```
 ```
-<taxi instructions>
+<-- <taxi instructions>
 ```
 
 
-# General Notes
+# ATC General Notes
+ - --> means making a call to the controller, if initiating contact it means using their callsign followed by yours.
+ - <-- means the controller responding or making contact with you using your callsign. 
+ - Always read back all instrucions. Information such as winds can be ommitted.
  - Throughout flight, ensure standby frequency is set ready to go for next probable handover frequency.
- - Always make new contact with frequencies with who you are, where you are, what you want.
+ - Always make new contact with controllers in general with: who you are, where you are, what you want.
 
 # General ATC Requests
 Know how to do any of these requests if asked by ATC (which could happen in any of departure, climb, cruise or approach phases):
