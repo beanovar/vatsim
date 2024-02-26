@@ -25,10 +25,16 @@
 ## Clearance
  - Request Clearance
 ```
---> <aircraft type> at <stand>, with information <info>, request clearance to <destination>.
+--> <aircraft type> at <stand>
+    with information <info>
+    request clearance to <destination>.
 ```
 ```
-<-- cleared to <destination>, <departure>, <initial altitude>, <runway>, <squawk>
+<-- cleared to <destination>
+    <departure route / runway>
+    <initial altitude / expected altitude in 10 minutes (for US)>
+    <departure frequency (for US)>
+    <squawk>
 ```
  - Set initial altitude on ALT selector
  - Enter squawk code into transponder
@@ -150,8 +156,7 @@ Know how to do any of these requests if asked by ATC (which could happen in any 
  - Fly direct to waypoint
    - typically (but not always) just a shortcut to one already on your route (note the actual names of VORs which could be used, e.g Brookmans Park for BPK) 
  - Fly published hold at waypoint (with correct inbound course)
- - Report distance and rough cardinal direction from a waypoint or airport
- - Fly a VOR radial (from and to)
+ - Report distance and rough cardinal direction from a waypoint or airport 
 
 # Resources
 - [IFR Phraseology Guide](https://aviationpro.nl/tutorials/vatsim-tutorials/ifr-phraseology-guide/)
