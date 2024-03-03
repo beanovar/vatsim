@@ -4,7 +4,7 @@
  - Create valid flight plan route (Simbrief)
  - Submit flight plan to Vatsim
  - Review charts
-   - Departure Airport / SID / Taxiways / Parking Terminals
+   - Departure Airport / SID / Taxiways / Parking Terminals   
    - Arrival Airport / STAR / Taxiways / Parking Terminals / **Desired Stand** (or during cruise if flight is long enough and wanting to save some time)
  - Spawn at unoccupied stand
  - Startup systems / electrics
@@ -12,6 +12,7 @@
  - Nav lights on
  - Note online frequencies in the area.
  - Check ATIS, note information code / active runways / departures / QNH
+ - Check all relevant SID departures for active runway, the one given might not be what you filed.
  - Set QNH
  - Tune clearance delivery 
  - FMC: Set fuel and payload weights in the sim as per Simbrief plan and confirm take off V Speeds
