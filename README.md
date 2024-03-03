@@ -59,7 +59,9 @@
 --> request taxi
 ```
 ```
-<-- <runway #> taxi holding point <holding point> via <taxi route>
+<-- <runway #>
+taxi holding point <holding point>
+via <taxi route>
 ```
  - Squawk Charlie
  - Taxi as per instructions holding short at holding point and any other instructions about giving way to other aircraft.
@@ -84,7 +86,7 @@
  --> <departure route> <current altitude> climbing <cleared altitude/FL>
  ```
  ```
- <-- climb <level> / direct to <waypoint>
+ <-- climb <level> / direct to <waypoint> / fly heading <heading>
  ```
  - On transition altitude change to STD Baro
  - Landing/taxi lights off at 10,000 feet
@@ -109,17 +111,22 @@
  - Take note of ATIS information at destination airport: QNH,  landing runway, information code 
  - Take note of stand preference.
  ```
- --> <current altitude> descending <cleared altitude/FL> <inbound waypoint>
+ --> <current altitude>
+descending <cleared altitude/FL>
+<inbound waypoint>
  ```
 ```
-<-- cleared <arrival> <transition>, expect <approach> <runway>
+<-- cleared <arrival> <transition>,
+expect <approach> <runway>
 ```
 - Turn on landing lights at 10,000 feet or within 10 miles of the airport.
 - FMC: Ensure correct arrival, approach and runway entered
 - FMC: Confirm landing VSPEEDS
 
 ```
---> <fly heading>, cleared <approach> <runway>, <speed> until <dme>
+--> <fly heading>,
+cleared <approach> <runway>,
+<speed> until <dme>
 ```
 - FMC: Activate programmed approach
 - Autopilot: Activate approach mode to capture glide slope.
@@ -136,6 +143,7 @@
 --> vacated at <exit>
 ```
 ```
+<-- say parking
 <-- <taxi instructions>
 ```
 
