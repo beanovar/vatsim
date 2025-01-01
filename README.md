@@ -175,6 +175,8 @@ Know how to do any of these requests if asked by ATC (which could happen in any 
 - [Youtube: Flight Insight](https://www.youtube.com/@flightinsight9111/playlists)
 - https://www.pilotedge.net/pages/i-ratings
 - [Full Vatsim Flights](https://www.youtube.com/playlist?list=PLtO_n5SzuAacXKQYoKQY4DHH0YUrPxYTa)
+- [Austin’s Very Easy Guide to 
+Proper Radio Phraseology and Technique](http://www.austincollins.com/2012aveg4.pdf)
 
 # VFR Resources
 - [Altairva](http://www.altairva-fs.com/training/ava_training_ifr_vatsim_vfr.htm)
